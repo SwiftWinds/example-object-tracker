@@ -207,7 +207,7 @@ def main():
             return generate_svg(src_size, inference_size, inference_box, objs, labels, text_lines, trdata, trackerFlag)
 
     result = gstreamer.run_pipeline(user_callback,
-                                    src_size=(640, 480),
+                                    src_size=(640, 352),
                                     appsink_size=inference_size,
                                     trackerName=args.tracker,
                                     videosrc=args.videosrc,
